@@ -1,0 +1,334 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --green: #8bea00;
+    --red: #ff3b3b;
+    --text: #333;
+}
+
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #00e676;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* =========================
+   MAIN WHITE CARD
+========================= */
+
+.main-container {
+    position: relative;
+    width: 440px;
+    height: 385px;
+    background: #fff;
+    border-radius: 3px;
+    box-shadow: 0 12px 25px rgba(0, 100, 50, 0.25);
+}
+
+
+/* =========================
+   LEFT IMAGE CARD
+========================= */
+
+.image-card {
+    position: absolute;
+    left: -29px;
+    top: 29px;
+    width: 208px;
+    height: 327px;
+    background: var(--green);
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.22);
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* =========================
+   HEADER ICONS
+========================= */
+
+.card-header {
+    height: 38px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 9px;
+    color: white;
+}
+
+
+.icon-button {
+    border: none;
+    outline: none;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    font-size: 25px;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-button svg {
+    width: 18px;
+    height: 18px;
+}
+
+
+/* =========================
+   MAIN APPLE IMAGE
+========================= */
+
+.main-img-container {
+    height: 232px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+.main-apple {
+    width: 225px;
+    height: 235px;
+    object-fit: contain;
+    display: block;
+    transform: translateX(-3px);
+}
+
+
+/* =========================
+   THUMBNAILS
+========================= */
+
+.thumbnail-container {
+    height: 57px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    padding: 6px;
+}
+
+.thumb {
+    width: 32px;
+    height: 32px;
+    border: 1px solid #d5d5d5;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.thumb:hover {
+    border-color: #777;
+    transform: translateY(-2px);
+}
+.thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+/* =========================
+   RIGHT SIDE
+========================= */
+
+.product-details {
+    position: absolute;
+    left: 207px;
+    top: 0;
+    width: 215px;
+    padding-top: 37px;
+}
+
+
+/* Product title */
+
+.product-title {
+    color: #333;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+
+/* Product code */
+
+.product-code {
+    color: #aaa;
+    font-size: 8px;
+    margin-bottom: 28px;
+}
+
+
+/* =========================
+   PRICE
+========================= */
+
+.product-price {
+    color: #e52d35;
+    font-size: 36px;
+    font-weight: 300;
+    margin-bottom: 14px;
+    line-height: 1;
+}
+
+
+.product-price span {
+    font-size: 11px;
+    vertical-align: super;
+    margin-right: 3px;
+}
+
+
+/* =========================
+   SECTION LABEL
+========================= */
+
+.section-label {
+    color: #aaa;
+    font-size: 8px;
+    letter-spacing: 0.8px;
+    margin-bottom: 8px;
+}
+
+
+/* =========================
+   COLOR OPTIONS
+========================= */
+
+.color-img {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 22px;
+}
+
+
+.color-option {
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.color-option img {
+    width: 17px;
+    height: 17px;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+
+.color-option.selected {
+    border: 1px solid #aaa;
+    width: 23px;
+    height: 23px;
+}
+.color-option:hover {
+    border-color: #777;
+    transform: translateY(-2px);
+}
+
+
+
+/* =========================
+   BENEFITS
+========================= */
+
+.benefits-list {
+    margin-left: 13px;
+
+    margin-bottom: 20px;
+
+    color: #555;
+
+    font-size: 9px;
+
+    line-height: 1.55;
+}
+
+
+.benefits-list li::marker {
+    font-size: 7px;
+}
+
+
+/* =========================
+   ADD TO CART
+========================= */
+
+.add-to-cart-btn {
+    width: 134px;
+    height: 40px;
+    border: none;
+    border-radius: 3px;
+    background: #ff3b3b;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 6px 12px rgba(255, 50, 50, 0.25);
+    transition: 0.2s;
+}
+
+
+.add-to-cart-btn:hover {
+    background: #ed2929;
+    transform: translateY(-1px);
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 650px) {
+
+    body {
+        padding: 30px 15px;
+    }
+    .main-container {
+        width: 100%;
+        max-width: 440px;
+        height: auto;
+        min-height: 700px;
+    }
+    .image-card {
+        position: relative;
+        left: 0;
+        top: -20px;
+        width: 100%;
+        height: 330px;
+    }
+    .product-details {
+        position: relative;
+        left: 0;
+        top: -5px;
+        width: 100%;
+        padding: 0 25px 30px;
+    }
+
+}
